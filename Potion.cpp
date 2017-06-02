@@ -4,9 +4,9 @@ int Potion::count = 0;
 
 void Potion::setPotion() {
     srand(time(0));        
-    usleep(800000); 
     xp = rand()%Fish::boundX;
-    usleep(500000); 
+    //usleep(500000); 
+    usleep(800000); 
     yp = rand()% Fish::boundY;
     if (!isFree()) {
          return setPotion();
