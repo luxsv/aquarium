@@ -1,12 +1,14 @@
 #include "Potion.h"
 #include "Fish.h"
+#include <ctime>
 int Potion::count = 0;
 
 void Potion::setPotion() {
-    srand(time(0));        
+    srand(time(NULL));        
+    usleep(90000); 
     xp = rand()%Fish::boundX;
-    //usleep(500000); 
-    usleep(800000); 
+    usleep(90000); 
+//    usleep(800000); 
     yp = rand()% Fish::boundY;
     if (!isFree()) {
          return setPotion();

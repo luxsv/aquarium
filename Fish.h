@@ -13,7 +13,7 @@ class Fish{
 public:
 Fish(){
     initFish();
-    cout<<"init Fishhh\n";
+//    cout<<"init Fishhh\n";
     ++countFish;
     ++countLiveFish;
 }

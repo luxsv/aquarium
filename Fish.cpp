@@ -83,10 +83,9 @@ void Fish::MoveFishs(Fish * school) {
 
 void Fish::initFish() {
     hp = 100;
-    srand(time(0));        
-    usleep(800000); 
+    srand(time(NULL));        
+    usleep(100000); 
     x = rand()% boundX;
-    //usleep(500000); 
     y = rand()% boundY;
     if (!isFree()) {
          return initFish();
