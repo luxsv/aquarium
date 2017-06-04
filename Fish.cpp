@@ -44,7 +44,7 @@ bool Fish::isDead(){
 
 void Fish::moveIsWall(){
     isWall = true; 
-    if ((int)name%2) {
+    if ((int)(name) %2) {
         y > boundY-2 ? y = 0:  ++y; 
         if(hp > 50 && y < boundY-2) ++y; 
     } else {
