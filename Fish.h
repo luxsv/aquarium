@@ -22,7 +22,7 @@ bool isDead();
 bool isFree();
 void initFish();
 void isPotion();
-void fishInfo();
+void fishInfo() const;
 void move();
 
 
@@ -30,7 +30,6 @@ friend class Potion;
 
 static void MoveFishs(Fish * school);
 static void FishsInfo(Fish * school);
-static void showCountFish();
 static void showField();
 static void initField();
 

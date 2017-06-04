@@ -114,7 +114,7 @@ void Fish::FishsInfo(Fish * school) {
 }
 
 
-void Fish::fishInfo(){
+void Fish::fishInfo() const{
     char arrayHp[50];
     memset(arrayHp,45, 50); 
     memset(arrayHp,35, hp/2);
